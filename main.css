@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #3d4b3d;
+  background-image: url("../assets/img/bg.png");
+  background-size: cover; /* o 'contain' si preferís que se ajuste sin recorte */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* efecto de paralaje suave */
+}
+header {
+  background: url("../assets/img/header-bg.png") center/cover no-repeat;
+  background-color: #dbe7d2;
+  padding: 32px 20px;
+  text-align: center;
+  color: #1e241e;
+  position: relative;
+}
+header h1 {
+  font-size: 3.2em;
+  margin: 0;
+  text-shadow: 1px 1px 2px #d0dbcf;
+  z-index: 9999;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 45%;
+  display: flex;
+  align-items: center;
+  background: #25d366;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  z-index: 999;
+}
+.whatsapp img {
+  width: 20px;
+  margin-right: 8px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px auto;
+  max-width: 1000px;
+}
+.column {
+  flex: 1;
+  min-width: 300px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin: 14px 10px 0px 10px;
+}
+.section:nth-of-type(odd) .column {
+  background-color: #6c7d6c;
+  color: #f4edcc;
+}
+.section:nth-of-type(even) .column {
+  background-color: #dbe7d2;
+  color: #3d4b3d;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider .slides {
+  display: flex;
+  transition: transform 1s ease;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  max-height: 350px; /* Cambiá según tu necesidad */
+}
+
+.section {
+  padding: 0px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  flex: 1 1 300px;
+  background: #4e5e4e;
+  color: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+}
+h2 {
+  color: inherit;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  .container {
+    flex-direction: column;
+  }
+  iframe {
+    height: 200px !important;
+  }
+}
