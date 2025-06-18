@@ -12,8 +12,8 @@ body {
   background-attachment: fixed; /* efecto de paralaje suave */
 }
 header {
-  background: url("assets/img/header-bg.png") center/cover no-repeat;
-  background-color: #dbe7d2;
+  background: url("assets/img/header-bg-c.png") center/cover no-repeat;
+  background-color: #022410;
   padding: 32px 20px;
   text-align: center;
   color: #1e241e;
